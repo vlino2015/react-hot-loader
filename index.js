@@ -27,6 +27,6 @@ if (process.env.NODE_ENV === 'production') {
     console.warn('React-Hot-Loader is not supported in this environment.');
     module.exports = require('./dist/react-hot-loader.production.min.js');
   } else {
-    module.exports = window.reactHotLoaderGlobal = require('./dist/react-hot-loader.development.js');
+    module.exports  = window.reactHotLoaderGlobal = require('./dist/react-hot-loader.development.js');
   }
 }
